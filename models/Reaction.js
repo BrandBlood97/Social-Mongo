@@ -1,5 +1,6 @@
 // Reaction.js - Defines the Reaction schema for subdocument.
 const { Schema, Types } = require('mongoose');
+const formatDate = require('../utils/formatDate');
 
 const reactionSchema = new Schema({
   reactionId: {
@@ -19,10 +20,7 @@ const reactionSchema = new Schema({
     type: Date,
     default: Date.now,
     // Getter method to format the timestamp
-    get: (timestamp) => {
-      // Format timestamp here
-      return timestamp;
-    },
+    get: (date) => formatDate(date),
   },
 }, {
   toJSON: {

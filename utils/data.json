@@ -1,0 +1,70 @@
+{
+    "users": [
+      {
+        "username": "user1",
+        "email": "user1@example.com"
+      },
+      {
+        "username": "user2",
+        "email": "user2@example.com"
+      },
+      {
+        "username": "user3",
+        "email": "user3@example.com"
+      },
+      {
+        "username": "user4",
+        "email": "user4@example.com"
+      }
+    ],
+    "thoughts": [
+      {
+        "thoughtText": "This is a thought from user1.",
+        "username": "user1",
+        "reactions": []
+      },
+      {
+        "thoughtText": "This is another thought from user1.",
+        "username": "user1",
+        "reactions": []
+      },
+      {
+        "thoughtText": "This is a thought from user2.",
+        "username": "user2",
+        "reactions": []
+      },
+      {
+        "thoughtText": "Thoughts from user3 are enlightening.",
+        "username": "user3",
+        "reactions": []
+      },
+      {
+        "thoughtText": "user4's thought on the subject.",
+        "username": "user4",
+        "reactions": []
+      }
+    ],
+    "reactions": [
+      {
+        "reactionBody": "This is a reaction from user2.",
+        "username": "user2"
+      },
+      {
+        "reactionBody": "Great thought!",
+        "username": "user3"
+      },
+      {
+        "reactionBody": "I agree with this.",
+        "username": "user1"
+      },
+      {
+        "reactionBody": "Interesting perspective.",
+        "username": "user4"
+      },
+      {
+        "reactionBody": "I never thought of it that way!",
+        "username": "user2"
+      }
+    ]
+  }
+  
