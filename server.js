@@ -1,7 +1,7 @@
 // server.js - Entry point for the API server.
 const express = require('express');
-const userRoutes = require('./routes/userRoutes');
-const thoughtRoutes = require('./routes/thoughtRoutes');
+const userRoutes = require('./routes/apiRoutes/userRoutes');
+const thoughtRoutes = require('./routes/apiRoutes/thoughtRoutes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
