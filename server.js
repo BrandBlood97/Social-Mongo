@@ -1,17 +1,18 @@
 // server.js - Entry point for the API server.
 const express = require('express');
-const userRoutes = require('./routes/apiRoutes/userRoutes');
-const thoughtRoutes = require('./routes/apiRoutes/thoughtRoutes');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const db = require('./config/connection');
+const PORT = 3001;
+const routes = require('./routes');
 
-app.use(express.json()); // Parse JSON bodies
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(routes);
 
-// API routes
-app.use('/api/users', userRoutes);
-app.use('/api/thoughts', thoughtRoutes);
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+db.once('open', () => {
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
 });
