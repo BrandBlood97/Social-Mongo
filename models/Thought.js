@@ -1,6 +1,7 @@
 // Thought.js - Defines the Thought schema and model.
 const { Schema, model } = require('mongoose');
 const ReactionSchema = require('./Reaction');
+const formatDate = require('../utils/formatDate');
 
 const thoughtSchema = new Schema({
   thoughtText: {

@@ -1,4 +1,5 @@
 const date = require ('../models/Thought')
+const moment = require('moment');
 
 const formatDate = (date) =>  {
     
